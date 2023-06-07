@@ -5,7 +5,7 @@ drop table takes;
 		class_id 		varchar2(10),
 		grade 		char(5),
 		constraint 	pk_takes 		primary key(stu_id, class_id),
-		constraint 	fk_takes1 		foreign key(stu_id) 
+		constraint 	fk_takes1 		foreign key(stu_id)
 				references 	student(stu_id),
 		constraint 	fk_takes2 		foreign key(class_id) 
 				references 	class(class_id)
